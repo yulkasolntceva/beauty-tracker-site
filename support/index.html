@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beauty Tracker &amp; Planner — Support</title>
+  <meta name="description" content="Support and help for Beauty Tracker &amp; Planner.">
+  <link rel="icon" type="image/png" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <div class="hero">
+    <img class="hero-icon" src="../assets/app-icon.png" alt="Beauty Tracker &amp; Planner">
+    <h1>Beauty Tracker &amp; Planner</h1>
+    <p class="tagline">Your beauty routine, organised.</p>
+  </div>
+
+  <div class="intro">
+    <h2>Need help?</h2>
+    <p>Find answers to common questions or contact us if you need assistance with Beauty Tracker &amp; Planner.</p>
+  </div>
+
+  <div class="section container">
+    <p class="section-title">Frequently Asked Questions</p>
+    <ul class="faq-list" id="faq">
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do reminders work?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          You can set a booking reminder for each treatment. Beauty Tracker will remind you when it's time to plan your next visit.
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I add a treatment or appointment?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          Open the app and tap the + button. Choose a treatment, date and time, then save your visit.
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I add photos to a visit?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          Yes. Photos can be added to completed visits so you can keep a visual history of your results.
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I track how much I spend?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          Yes. Add a price to your visits and the Spending section will show totals, averages and spending by category.
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I customise treatments?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          Yes. You can change treatment names, icons, colours and reminder settings.
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are my photos and treatment history private?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 10 6"><polyline points="1,1 5,5 9,1"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          Your personal treatment information is stored only on your device and is intended for your own use. See our <a href="../privacy/">Privacy Policy</a> for full details.
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="section container">
+    <div class="contact-card">
+      <h2>Still need help?</h2>
+      <p>If you have a question, found a bug, or want to share feedback, get in touch.</p>
+      <a class="btn" href="mailto:beautytracker.support@gmail.com">Contact Support</a>
+      <span class="contact-note">We'll do our best to reply as soon as possible.</span>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-brand">Beauty Tracker &amp; Planner</p>
+    <p class="footer-copy">© 2026 Yuliia Zavoiura</p>
+    <p class="footer-links">
+      <a href="../privacy/">Privacy Policy</a>
+      <span class="footer-sep">·</span>
+      <a href="#">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
