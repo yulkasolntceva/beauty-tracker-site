@@ -193,6 +193,60 @@ a:hover { text-decoration: underline; }
 
 .faq-item.open .faq-answer { display: block; }
 
+/* ── Donation ────────────────────────────────────────── */
+.donation-card {
+  background: #FDFAFD;
+  border-radius: 22px;
+  border: 1px solid #EDE3F5;
+  box-shadow: 0 2px 20px rgba(184, 91, 200, 0.07), 0 0 0 0 rgba(184, 91, 200, 0);
+  padding: 34px 36px;
+  text-align: center;
+}
+
+.donation-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.donation-text {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  max-width: 540px;
+  margin: 0 auto 22px;
+}
+
+.support-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.support-button:hover { opacity: 0.88; text-decoration: none; }
+
+.donation-note {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  opacity: 0.75;
+}
+
+@media (max-width: 480px) {
+  .donation-card { padding: 24px 20px; }
+  .support-button { display: block; width: 100%; text-align: center; box-sizing: border-box; }
+}
+
 /* ── Contact ─────────────────────────────────────────── */
 .contact-card {
   background: var(--surface);
